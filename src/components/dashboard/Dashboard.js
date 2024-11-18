@@ -2,6 +2,7 @@ import React from 'react'
 import { Col, Image, Row } from 'react-bootstrap'
 import Chart from '../chart'
 import Style from './dashboard.module.scss'
+import TitleIcon from '../titleIcon'
 
 
 const Dashboard = () => {
@@ -32,8 +33,26 @@ const Dashboard = () => {
                 <Chart />
             </Row>
             <Row>
-                <Col xs={6}></Col>
-                <Col xs={6}></Col>
+                <Col xs={6}>
+                    <div className={Style.review_card}>
+                        <TitleIcon title={`Rating Review`} icon={`/assets/images/medal-star.png`}/>
+                        <p>Reviews of some of our app restaurant industry companies.</p>
+                        <div className={Style.review}>
+                        <Image src='/assets/images/star-01.png'/>
+                        <span>4.9</span>
+                        </div>
+                    </div>
+                </Col>
+                <Col xs={6}>
+                <div className={Style.review_card_two}>
+                        <TitleIcon title={`Total Partner`} icon={`/assets/images/celo.png`} isBlankModel/>
+                        <p>{""}</p><br/><br/><br/>
+                        <div className={Style.review_two}>
+                        {/* <Image src='/assets/images/star-01.png'/> */}
+                        <span>50</span>
+                        </div>&nbsp;Thousands
+                    </div>
+                </Col>
             </Row>
             <Row>
 
