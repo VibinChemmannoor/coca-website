@@ -2,7 +2,7 @@ import React from 'react'
 import { Button, Col, Container, Image, Row } from 'react-bootstrap'
 
 import Style from './header.module.scss'
-import { Link } from 'react-router-dom'
+import { Link, useLocation, useNavigation } from 'react-router-dom'
 
 const Header = () => {
 
@@ -13,6 +13,10 @@ const Header = () => {
         {label:"Blog", link:"/blog"},
         {label:"Resource", link:"/resource"},
     ]
+    const location = useLocation();
+    const currentPath = location.pathname;
+    console.log('location=',location.pathname);
+    
   return (
     <>
     <Container>
@@ -26,8 +30,8 @@ const Header = () => {
                     {
                         menuItems?.map((items,i)=>{
                             return (
-                                <li>
-                                    <Link to={items?.link}>{items?.label}</Link>
+                                <li key={i}>
+                                    <Link className={currentPath ===items?.link? Style.active: ""} to={items?.link}>{items?.label}</Link>
                                 </li>
                             )
                         })
