@@ -1,0 +1,55 @@
+.dashboard{
+    display: block;
+    background-color: #131315;
+    border-radius: 20px;
+    width: 100%;
+    .text_content{
+        padding: 40px;
+        h1{
+            color: white;
+            padding-bottom: 10px;
+        }
+        p{
+            color: gray;
+        }
+        span{
+            background-color: #FF5C00;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            padding-left: 10px;
+            font-size: 12px;
+            border-radius: 20px;
+            display: inline-flex;
+            align-items: center;
+            color: white;
+        }
+    }
+    
+}
+.image_container{
+    padding-top: 50px;
+    position: relative;
+    width: 100%;
+    
+    .frame_image{
+        width: 100%;
+        display: block;
+        height: auto;
+    }
+    .overlay_image{
+        position: absolute;
+    }
+}
+.group_one{
+    top: 2%;
+    left: -15%;
+    width: 30%;
+}
+.group_two{
+    top: -45%;
+    left: 80%;
+    width: 40%;
+}
+
+
+
