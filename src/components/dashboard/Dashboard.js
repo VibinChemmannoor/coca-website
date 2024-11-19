@@ -3,6 +3,7 @@ import { Col, Image, Row } from 'react-bootstrap'
 import Chart from '../chart'
 import Style from './dashboard.module.scss'
 import TitleIcon from '../titleIcon'
+import Message from '../message'
 
 
 const Dashboard = () => {
@@ -55,7 +56,7 @@ const Dashboard = () => {
                 </Col>
             </Row>
             <Row>
-
+                <Message />
             </Row>
         </Col>
       </Row>

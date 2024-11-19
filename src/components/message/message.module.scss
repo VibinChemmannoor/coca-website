@@ -1,0 +1,37 @@
+.message{
+    display: block;
+    background-color: #FFF5EE;
+    border-radius: 30px;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    h6{
+        color: #DC8558;
+        font-weight: 500;
+        margin-bottom: 40px;
+    }
+    .author{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+.title{
+    padding: 6px 10px;
+    background-color: white;
+    border-radius: 30px;
+    display: inline-flex;
+    margin-bottom: 5px;
+    .title_image{
+        padding: 8px 8px;
+        background-color: rgb(87, 85, 85);
+        border-radius: 20px;
+        margin-right:0px;
+        width: 30px;
+        height: 30px;
+    }
+    .text{
+        color: #0000;
+        font-size: 14px !important  ;
+    }
+}
